@@ -149,6 +149,10 @@ class App {
         positionSize.innerText = estimatedProfit.innerText = tradeRisk.innerText = `$0`
         
         percentStopLoss.innerText = percentTarget.innerText = riskRewardRatio.innerText = positionSizeCoin.innerText = `0`  
+        
+        resultDiv.classList.remove('active')
+        warningMsgDiv.classList.remove('active')
+        warningMsg.innerText = ``
     }
     _clipboardMsg(a){
         a.classList.remove('visible')
