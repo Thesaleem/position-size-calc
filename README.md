@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Position Size Calc](https://positioncalc.netlify.app)
+- Live Site URL: [Position Size Calc](https://calcposition.netlify.app)
 
 ## My process
 
