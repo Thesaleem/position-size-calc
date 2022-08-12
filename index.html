@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Position Size Calculator</title>
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h2>Position Size Calculator</h2>
+    </header>
+    <section class="section-1">
+        <div class="intro">
+            <h2>Know your size <span class="small">and</span>  position yourself  accordingly</h2>
+            <p>It's important to calculate your position size in trades to 
+                minimize losses so as to remain profitable. 
+                This tool can be used to calculate your position size with 
+                your entry price, stop loss and your capital</p>
+        </div>
+        <div class="section-img">
+            <img class="img" src="./Board meeting.jpg" alt="group of people seated looking at a white marker board with some calculations">
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container">
+            <div class="child-1">
+                <label for="capital" class="label-capital">Capital</label>
+                <input type="number" id="capital" placeholder="Trade Capital">
+                <label for="risk" class="label-risk">Risk per trade (%) <span class="risk-details">i.e what % of your capital are you willing to lose if this trade goes against you</span></label>
+                <input type="number" id="risk"  placeholder="Percentage Risk">
+                <div class="trade-type">
+                    <p>Trade Type:</p>
+                    <button class="position active long-active " data-id="1">Long</button>
+                    <button class="position short-active" data-id="2">Short</button>
+                </div>
+                <label for="entry" class="label-entry">Entry Price</label>
+                <input type="number" id="entry"  placeholder="Entry Price">
+                <label for="stop" class="label-stop">Stop Loss</label>
+                <input type="number" id="stop"  placeholder="Stop Loss">
+                <label for="target" class="label-risk">Take Profit</label>
+                <input type="number" id="target" placeholder="Profit Target">
+                <p class="desktop">Note: This tool does not account for exchange fees as this varies in exchanges.</p>
+            </div>
+            <div class="child-2">
+                <div class="child-2-con">
+                    <div class="result">
+                        <h4>Position Size (USDT)</h4>
+                        <h3 class="pos-size">$0</h3>
+                    </div>
+                    <div class="result">
+                        <h4>Position Size (Currency Traded)</h4>
+                        <h3 class="pos-size-curr">0</h3>
+                    </div>
+                    <div class="result">
+                        <h4>Potential Profit</h4>
+                        <h3 class="profit">$0</h3>
+                    </div>
+                    <div class="result">
+                        <h4>Risk per trade</h4>
+                        <h3 class="risk">$0</h3>
+                    </div>
+                    <div class="percent-container">
+                        <div class="percent-result">
+                            <h4>Target</h4>
+                            <h3 class="target">0</h3>
+                        </div>
+                        <div class="percent-result">
+                            <h4>Stop Loss</h4>
+                            <h3 class="stop-loss">0</h3>
+                        </div>
+                        <div class="percent-result">
+                            <h>Risk/Reward</h4>
+                            <h3 class="rrr">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="reset-btn">RESET</button>
+                <p class="mobile">Note: This tool does not account for exchange fees as this varies in exchanges.</p>
+                <div class="warning_message-modal">
+                    <p class="msg"></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <p class="summary"></p>
+        <p class="donate">If you find this tool useful, kindly support by donating or sending a tip using the address below 👇🏽</p>
+        <div class="add-con">
+            <div class="address-card">
+                <h4 >USDT Address</h4>
+                <div class="address-details">
+                    <p class="addy add_desktop">TBXfniopH75XFZYJK2Cxp4VHYRWWZTa6ck</p>
+                    <p class="addy add_mobile">TBXfniopH75XFZYJK2Cxp<br>4VHYRWWZTa6ck</p>
+                    <div class="copy-con">
+                        <i class="fa fa-clone copy-icon" aria-hidden="true"></i>
+                        <p class="copy-message sucess visible">Copied</p>
+                        <p class="copy-message failed visible">Failed to copy</p>
+                    </div>
+                   
+                </div>
+                <p>Network: <span class="network">Tron (TRC20)</span></p>
+            </div>
+        </div>
+       
+        <ul class="contact">
+            <li>Contact</li>
+            <ul class="contact-icons">
+                <li class="list-icons"> <a href="mailto:adekunleismail14@gmail.com" class="fa fa-envelope-o icon" aria-hidden="true"></a></li>
+                <li class="list-icons"><a href="https://github.com/Thesaleem" class="fa fa-github icon" aria-hidden="true"></a></li>
+                <li class="list-icons"><a href="https://twitter.com/TheSaleem_" class="fa fa-twitter icon" aria-hidden="true"></a></li>
+            </ul>
+        </ul>
+    </section>
+</body>
+</html>
