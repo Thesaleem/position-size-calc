@@ -85,7 +85,6 @@ class App {
         const positiveInput = () => {
             return +tradeCapital.value > 0 && +entryPrice.value > 0 && +stopLoss.value > 0 && +percentRisk.value > 0 && +profitTarget.value > 0 
         }
-        console.log(positiveInput());
         resultDiv.classList.remove('active')
         warningMsgDiv.classList.remove('active')
         warningMsg.innerText =``
@@ -109,9 +108,9 @@ class App {
     _posSizeCalc(capital, entry, stop, risk, target){
         
         //check for long or shorts
-        const checkValue = function(entry, target){
+        const checkValue = (entry, target) => {
             let value;
-            if (target > entry){
+            if (this.#position === 'Long'){
                 value = (target - entry)/entry
             }
             else{
