@@ -83,7 +83,6 @@ header h2{
 .trade-type{
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
     margin-bottom: 1rem;
 }
 .trade-type p{
@@ -98,7 +97,6 @@ header h2{
 }
 .position{
     font-size: 1rem;
-    /* margin-left: 2rem; */
     padding: 0.4rem;
     outline: none;
     cursor: pointer;
@@ -153,15 +151,13 @@ input::placeholder{
 .child-2{
     padding: 2rem 0;
     position: relative;
-    /* filter: blur(1.1rem) */
 }
 
 .result h4{
     font-size: 1.3rem;
     font-weight: 500;
     color: hsl(187, 26%, 7%);
-    /* max-width: 200px; */
-    /* border: 1px solid red; */
+    max-width: 60%;
 }
 .result h3{
     font-size: 1.6rem;
@@ -224,9 +220,7 @@ input::placeholder{
 .address-details{
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid blue; */
     padding: 1rem 0;
-    /* max-width: 350px; */
 
 }
 .copy-icon{
@@ -331,7 +325,6 @@ input::placeholder{
     .intro{
         width: 40%;
         margin-right: 3rem;
-        /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -342,7 +335,6 @@ input::placeholder{
     .intro h2{
         text-align: start;
         font-size: 2.4rem;
-        /* border: 1px solid red; */
     }
     .intro p{
         text-align: start;
@@ -361,10 +353,8 @@ input::placeholder{
     }
     .child-1{
         width: 45%;
-        /* border: 1px solid red; */
     }
     .child-2{
-        /* border: 1px solid blue; */
         width: 45%;
         display: flex;
         flex-direction: column;
