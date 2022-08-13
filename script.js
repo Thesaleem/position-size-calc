@@ -63,7 +63,7 @@ class App {
         const check = function(){
             return entryPrice.value === '' && stopLoss.value === '' && profitTarget.value === '';
         }
-        tradeRisk.innerText = `$${(+percentRisk.value/100) * tradeCapital.value}`
+        tradeRisk.innerText = `$${((+percentRisk.value/100) * tradeCapital.value).toFixed(2)}`
         if(check()) return;
         this._posSizeCalc(+tradeCapital.value, +entryPrice.value, +stopLoss.value, +percentRisk.value,+profitTarget.value)    
     }
